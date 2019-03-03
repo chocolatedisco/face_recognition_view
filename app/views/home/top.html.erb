@@ -1,0 +1,17 @@
+<div class="center jumbotron">
+  <h2>
+    一人で写っている画像ファイルを選択して送信ボタンを押してください</br>
+  </br>
+  </br>
+  </br>
+    <%= form_tag( {action: :result}, multipart: true) do %>
+        <center><%= file_field_tag :file %></center></br>
+        <%= submit_tag "送信" %>
+    <% end %>
+  </h2>
+  </h3>
+    拡張子はjpg推奨です</br>
+    画質が悪いものだと読み取れないことがあります</br>
+  </h3>
+
+</div>

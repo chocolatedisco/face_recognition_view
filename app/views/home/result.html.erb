@@ -1,0 +1,13 @@
+<div class="center jumbotron">
+
+  <h2>
+    <% if @err == '0'%>
+      <%= @like %>に似ています。</br></br>
+      <img src="data:image/png;base64, <%=@face%>"></br></br>
+    <% else %>
+      <%= @errme %></br></br>
+    <% end %>
+  <a><%= link_to "戻る",root_path %></a>
+  </h2>
+
+</div>
